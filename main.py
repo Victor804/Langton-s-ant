@@ -23,12 +23,12 @@ class Ant(object):
     def load_picture(self):
         #Charge toutes les images 
         self.background = pygame.image.load("images/background.jpg").convert()
-        self.fourmie_0 = pygame.image.load("images/fourmie_0.png").convert_alpha()
-        self.fourmie_1 = pygame.image.load("images/fourmie_1.png").convert_alpha()
-        self.fourmie_2 = pygame.image.load("images/fourmie_2.png").convert_alpha()
-        self.fourmie_3 = pygame.image.load("images/fourmie_3.png").convert_alpha()
-        self.black = pygame.image.load("images/black.jpg").convert()
-        self.write = pygame.image.load("images/write.jpg").convert()
+        self.fourmie_0 = pygame.image.load("fourmie_0.png").convert_alpha()
+        self.fourmie_1 = pygame.image.load("fourmie_1.png").convert_alpha()
+        self.fourmie_2 = pygame.image.load("fourmie_2.png").convert_alpha()
+        self.fourmie_3 = pygame.image.load("fourmie_3.png").convert_alpha()
+        self.black = pygame.image.load("black.jpg").convert()
+        self.write = pygame.image.load("write.jpg").convert()
     
     def black_mark(self):
         self.fenetre.blit(self.black, (self.x, self.y))
